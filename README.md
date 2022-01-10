@@ -11,7 +11,7 @@ We analyzing specifically on two outcomes. One is the outcome based on the Launc
 ### Analysis of Outcomes Based on Launch Date
 In the analysis of outcomes based on Launch Date, we focused on theatre projects. In the line graph below, there were the most successful projects and the most failed project that were started in May and the most canceled project were started in January. There were the least amount of successful project started in December, the least amount of failed project that were started in November and the least amount of canceled projects were started in October. Based on this, if you want to have the most amount of sucessful and failed projects, you would want to start in May and if you want the least amount of cancelled, you would start the project in October. 
 
-![Theater_Outcomes_vs_Launch](/Resources/Theater_Outcomes_vs_Launch.png)
+![Theater_Outcomes_vs_Launch](Theater_Outcomes_vs_Launch.png)
 
 This line graph is based on a pivot table created using the Kickstarter data provided. First, we created a column for Date Created Conversion using the formula "=(((J1/60)/60)/24)+DATE(1970,1,1)"; Column J is the "launched_at" date. This formula will help us figure out how many days, minutes, and second that will need to be added to January 1, 1970 to calculate the actual campaign launch date. Then, we created another column for Years based on the column we just calculated for the Date Created Conversion, we calculated the year using the formula "=year(S1)". Using this data, we created a pivot table with "Parent Category" and "Years" under Filters, "Date Created Conversion" under Rows, "outcomes" under columns and "Count of outcomes" under Values as shown belown. 
 
