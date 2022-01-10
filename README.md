@@ -29,7 +29,7 @@ In order to calculate the percentage, the count of number of successful, number 
 ### Challenges and Difficulties Encountered
 In order to separate the Category and Subcategory column into the Parent Category and Subcategory using Text to Column, the columns needed will have to be empty or excel will have a error message asking if you want to replace the data that are in those columns as shown below. 
 
-![Text_to_Column_error](/Backup/Text_to_Column_error)
+![Text_to_Column_error](/Backup/Text_to_Column_error.png)
 
 When creating the countifs formula, the range of the goals will need to be carefully set as it may include different more than it should and will affect the total projects amounts. This would cause the data to be incorrect and would also cause the percentages to be incorrect. 
 
