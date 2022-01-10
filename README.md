@@ -50,4 +50,3 @@ The dataset only goes from 2009 to 2017; it is not up to date or current and cou
 - What are some other possible tables and/or graphs that we could create?
 
 We could create a line graph to see the trends throughout all the years of different outcomes and see which years had the most amount of successful, failed and canceled film & video. A bar graph showing the different outcomes for each of the different countries to see how each of the different countries did. A line graph to show all the different categories for a specific country and see how successful or failed or canceled each of the categories are doing. 
-
