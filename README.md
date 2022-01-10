@@ -11,7 +11,7 @@ We analyzing specifically on two outcomes. One is the outcome based on the Launc
 ### Analysis of Outcomes Based on Launch Date
 In the analysis of outcomes based on Launch Date, we focused on theatre projects. In the line graph below, there were the most successful projects and the most failed project that were started in May and the most canceled project were started in January. There were the least amount of successful project started in December, the least amount of failed project that were started in November and the least amount of canceled projects were started in October. Based on this, if you want to have the most amount of sucessful and failed projects, you would want to start in May and if you want the least amount of cancelled, you would start the project in October. 
 
-![Theater_Outcomes_vs_Launch](C:\Users\16472\OneDrive\Documents\University of Toronto\Classwork\Module 1\Resources)
+![Theater_Outcomes_vs_Launch](\Resources)
 
 This line graph is based on a pivot table created using the Kickstarter data provided. First, we created a column for Date Created Conversion using the formula "=(((J1/60)/60)/24)+DATE(1970,1,1)"; Column J is the "launched_at" date. This formula will help us figure out how many days, minutes, and second that will need to be added to January 1, 1970 to calculate the actual campaign launch date. Then, we created another column for Years based on the column we just calculated for the Date Created Conversion, we calculated the year using the formula "=year(S1)". Using this data, we created a pivot table with "Parent Category" and "Years" under Filters, "Date Created Conversion" under Rows, "outcomes" under columns and "Count of outcomes" under Values as shown belown. 
 
@@ -20,7 +20,7 @@ This line graph is based on a pivot table created using the Kickstarter data pro
 ### Analysis of Outcomes Based on Goals
 The line graph below shows the percentage of successful, failed, and canceled based on the different ranges of goals. There were no canceled plays, the highest percentage of successful was when the goals were set to less than $1,000, and the highest percentage of fail plays were when the goals were sent in the range of $40,000 t0 $49,999. Thes lowest percentage of sucessful plays were when the goals were set $45,000 and $49,999 and the lowest percent of failed plays were when goals were set to less than $1000. If you want the highest percentage of successful plays and the lowest percentage of failed plays, then the play should have a goal of less than $1,000 and the lowest percentage of successful and highest percentage of failed plays should set a goal with a range of $45,000 to $49,999. 
 
-![Outcomes_vs_Goals](/Resources/Outcomes_vs_Goals.png)
+![Outcomes_vs_Goals](Resources/Outcomes_vs_Goals.png)
 
 In order to calculate the percentage, the count of number of successful, number of failed and number of canceled using the following formula "=COUNTIFS(Kickstarter!$F:$F,"successful",Kickstarter!$D:$D,"<1000",Kickstarter!$R:$R,"plays")", and "=COUNTIFS(Kickstarter!$F:$F,"canceled",Kickstarter!$D:$D,"<100",Kickstarter!$R:$R,"plays")" respectively. The formula will have to updated for the appropriate goal ranges. Once all the the number of successful, failed and canceled have been updated, under the total projects column, the formula "=SUM(B2:D2)" will be used to add up all the columns. The percentage columns will be calculated by Number of Successful/Failed/Canceled divided by Total Projects. 
 
